@@ -1,0 +1,12 @@
+.header{
+    font-style: italic;
+}
+.color{
+    color: rgb(75, 72, 72);
+}
+.fontfamily{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif'
+}
+li{
+    font-size:larger
+}

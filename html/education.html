@@ -16,95 +16,156 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="../styles/styles.css" rel="stylesheet" />
         <link href="../styles/mystyles.css" rel="stylesheet" />
+        <style>
+            
+            .container {
+              display: flex;
+              justify-content: flex-start;
+              align-items: right;
+            }
+    
+            .text {
+              text-align: right;
+                max-width: 60%;
+              margin-left: 20px;
+            }
+    
+            .image {
+              max-width: 40%;
+            }
+    
+            .masthead {
+                text-align: center;
+            }
+            body {
+                background-image: url('../images/lines.jpg');
+                background-repeat: repeat;
+                background-size: contain;
+                background-position: center;
+            }
+            .social-icon {
+                display: inline-block;
+                background-color: #000000;
+                color: white;
+                text-align: center;
+                padding: 10px 15px;
+                border-radius: 5px;
+                text-decoration: none;
+                font-family: Arial, sans-serif;
+                font-size: 16px;
+                margin-bottom: 20px;
+                margin-right: 10px;
+                 }
+            .nav-item.contact {
+            position: relative;
+            }
+            .nav-item.contact::after {
+            content: "";
+            position: absolute;
+            top: 22%;
+            left: 0;
+            right: 0;
+            height: 35px; /* Adjust the height as needed */
+            background-color: #219D50;
+            z-index: -1;
+            }
+            footer {
+      background-color: black;
+      color: white;
+      padding: 10px; /* Adjust the padding value to your desired height */
+      text-align: center;
+      width: 100%;
+    }
+
+    /* Additional styles for the experience.html page */
+    body.experience {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    body.experience footer {
+      background-image: url('path_to_your_image.jpg');
+      background-size: cover;
+      background-position: center;
+      margin-top: auto;
+    }
+        </style>
     </head>
     <body>
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
             <div class="container px-4 px-lg-5">
-                <a class="navbar-brand header" href="index.html">Luke Hauver - Education</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="../index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="education.html">Education</a></li>
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="experience.html">Experience</a></li>
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="skills.html">Skills</a></li>
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="../html/tableau.html">Tableau</a></li>
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
+              <a class="navbar-brand" href="education.html">Luke Hauver - About</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                  <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="../index.html">Home</a></li>
+                  <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="experience.html">Experience</a></li>
+                  <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="skills.html">Portfolio</a></li>
+                  <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="education.html">About</a></li>
+                  <li class="nav-item contact"><a class="nav-link px-lg-3 py-3 py-lg-4" href="contact.html">Contact</a></li>
+                </ul>
+              </div>
             </div>
-        </nav>
+          </nav>
         <!-- Page Header-->
-        <header class="masthead" style="background-image: url('https://media.idownloadblog.com/wp-content/uploads/2020/10/iOS-14.2-wallpaper-Desert-Dome-Dark-Mode.jpg')" title="Back Ground Image of the Deset">
+        <header class="masthead" style="background-image: url('../images/aboutme.jpg'); filter: none;" title="Background Image of the Desert">
             <div class="container position-relative px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-md-10 col-lg-8 col-xl-7">
                         <div class="page-heading">
-                            <h1>Luke Hauver</h1>
-                            <span class="subheading">Pre-Marketing | BYU</span>
+                            <!-- <h1>About Me</h1> -->
+                            <span class="subheading"></span>
                         </div>
                     </div>
                 </div>
             </div>
         </header>
         <!-- Main Content-->
-        <main class="mb-4">
-            <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-md-10 col-lg-8 col-xl-7">
-                        <p>Life is time to learn and grow.</p>
-                            <ol class="color">
-                                <li> 
-                                    Brigham Young University
-                                        <ul>
-                                            <li>
-                                                April 2025
-                                            </li>
-                                            <li>
-                                                <a href="https://marriott.byu.edu/mktg/" target="_blank" title="BYU Marketing Home Page Website">Bachelores of Science in Marketing</a>
-                                            </li>
-                                        </ul>
-                                </li>
-                                <li> 
-                                    Moapa Valley High School
-                                        <ul>
-                                            <li>
-                                                May 2019
-                                            </li>
-                                            <li>
-                                                High School Diploma
-                                            </li>
-                                        </ul>
-                                </li>
-                            </ol>
+        <div class="container"></div>
+        <div class="container px-4 px-lg-5">
+            <img src="../images/about.png" height="300" alt="Luke Hauver LinkedIn profile screenshot">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div>
+                    <!-- Post preview-->
+                    <div class="post-preview">
+                        <a>
+                            <h3 class="post-subtitle">
+                                <ul>
+                               
+                                        I am an aspiring digital marketer at the Marriott School of Business at Brigham Young University with a demonstrated history of
+                                        working in social media management. Originally I am from Overton, Nevada but just recently moved to New York City. My passions include the outdoors, sports, exercising, music, and spending time with family.
+                                   
+                                </ul>
+                            </h3>
+                        </a>
                     </div>
+                    <!-- Divider-->
                 </div>
             </div>
-        </main>
+        </div>
+        <hr class="my-4" />
+        <div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase fontfamily" href="#top">Back To Top ↑</a></div>
         <!-- Footer-->
-        <footer class="border-top color">
-            <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-md-10 col-lg-8 col-xl-7">
-                        <ul class="list-inline text-center">
-                            <li class="list-inline-item">
-                                <a href="https://www.facebook.com/luke.hauver.9" target="_blank">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fas fa-circle fa-stack-2x"></i>
-                                        <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li>
-                        </ul>
-                        <div class="small text-center text-muted fst-italic color">Copyright &copy; Luke Hauver 2022</div>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        <footer class="footer">
+            <ul class="list-inline text-center">
+              <li class="list-inline-item">
+                <a class="social-icon" href="https://www.linkedin.com/in/luke-hauver" target="_blank">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a class="social-icon" href="mailto:lukehauver@gmail.com">
+                  <i class="far fa-envelope"></i>
+                </a>
+                <a class="social-icon" href="https://www.instagram.com/lukehauver" target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+            </ul>
+          </footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->

@@ -10,3 +10,9 @@
 li{
     font-size:larger
 }
+body {
+    color: white; /* Set text color to white */
+    background-color: black; /* Set background color to black */
+    background-size: cover; /* Scale the image to cover the entire background */
+    background-position: center; /* Center the image */
+}

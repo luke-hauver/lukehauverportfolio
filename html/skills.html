@@ -16,28 +16,95 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="../styles/styles.css" rel="stylesheet" />
         <link href="../styles/mystyles.css" rel="stylesheet" />
+        <style>
+            /* Target the elements in the main body */
+            main {
+                color: white;
+            }
+    
+            /* Optionally, target specific elements within the main body */
+            main h2,
+            main h3 {
+                color: white;
+            }
+            body {
+                background-image: url('../images/lines.jpg');
+                background-repeat: repeat;
+                background-size: contain;
+                background-position: center;
+            }
+            .social-icon {
+      display: inline-block;
+      background-color: #000000;
+      color: white;
+      text-align: center;
+      padding: 10px 15px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      margin-bottom: 20px;
+      margin-right: 10px;
+    }
+    .nav-item.contact {
+      position: relative;
+    }
+    .nav-item.contact::after {
+      content: "";
+      position: absolute;
+      top: 22%;
+      left: 0;
+      right: 0;
+      height: 35px; /* Adjust the height as needed */
+      background-color: #219D50;
+      z-index: -1;
+    }
+    footer {
+      background-color: black;
+      color: white;
+      padding: 10px; /* Adjust the padding value to your desired height */
+      text-align: center;
+      width: 100%;
+    }
+
+    /* Additional styles for the experience.html page */
+    body.experience {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    body.experience footer {
+      background-image: url('path_to_your_image.jpg');
+      background-size: cover;
+      background-position: center;
+      margin-top: auto;
+    }
+        </style>
+        
     </head>
     <body>
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
             <div class="container px-4 px-lg-5">
-                <a class="navbar-brand header" href="index.html">Luke Hauver - Portfolio</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="../index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="experience.html">Experience</a></li>
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="skills.html">Portfolio</a></li>
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
+              <a class="navbar-brand" href="skills.html">Luke Hauver - Portfolio</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                  <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="../index.html">Home</a></li>
+                  <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="experience.html">Experience</a></li>
+                  <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="skills.html">Portfolio</a></li>
+                  <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="education.html">About</a></li>
+                  <li class="nav-item contact"><a class="nav-link px-lg-3 py-3 py-lg-4" href="contact.html">Contact</a></li>
+                </ul>
+              </div>
             </div>
-        </nav>
+          </nav>
         <!-- Page Header-->
-        <header class="masthead" style="background-image: url('../images/portfolioheader.png')" title="Back Ground Image of the Deset">
+        <header class="masthead" style="background-image: url('../images/portfolioheader.png'); filter: none;" title="Background Image of the Desert">
             <div class="container position-relative px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-md-10 col-lg-8 col-xl-7">
@@ -113,34 +180,32 @@
                                 <a>
                                     <h2 class="post-title">Photoshoots</h2>
                                     <hr class="my-4" />
-                                    <h3 class="post-subtitle">▪ Personal photoshoots I have done</h3>
+                                    
                                 <img src="../images/photoshoot.png" height="600" alt="Luke Hauver LinkedIn profile screenshot"> 
                                 </a>
                             </div>
+                            <hr class="my-4" />
+                    <div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase fontfamily" href="#top">Back To Top ↑</a></div>
                
                 </div>
             </div>
         </main>
         <!-- Footer-->
-        <footer class="border-top">
-            <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-md-10 col-lg-8 col-xl-7">
-                        <ul class="list-inline text-center">
-                            <li class="list-inline-item">
-                                <a href="https://www.facebook.com/luke.hauver.9" target="_blank">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fas fa-circle fa-stack-2x"></i>
-                                        <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li>
-                        </ul>
-                        <div class="small text-center text-muted fst-italic">Copyright &copy; Luke Hauver 2022</div>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        <footer class="footer">
+            <ul class="list-inline text-center">
+              <li class="list-inline-item">
+                <a class="social-icon" href="https://www.linkedin.com/in/luke-hauver" target="_blank">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a class="social-icon" href="mailto:lukehauver@gmail.com">
+                  <i class="far fa-envelope"></i>
+                </a>
+                <a class="social-icon" href="https://www.instagram.com/lukehauver" target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+            </ul>
+          </footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->

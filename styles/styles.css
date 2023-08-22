@@ -94,7 +94,6 @@ hr {
   color: inherit;
   background-color: currentColor;
   border: 0;
-  opacity: 0.25;
 }
 
 hr:not([size]) {
@@ -365,7 +364,6 @@ select {
   word-wrap: normal;
 }
 select:disabled {
-  opacity: 1;
 }
 
 [list]::-webkit-calendar-picker-indicator {
@@ -2224,19 +2222,15 @@ progress {
 }
 .form-control::-moz-placeholder {
   color: #6c757d;
-  opacity: 1;
 }
 .form-control:-ms-input-placeholder {
   color: #6c757d;
-  opacity: 1;
 }
 .form-control::placeholder {
   color: #6c757d;
-  opacity: 1;
 }
 .form-control:disabled, .form-control[readonly] {
   background-color: #e9ecef;
-  opacity: 1;
 }
 .form-control::-webkit-file-upload-button {
   padding: 0.375rem 0.75rem;
@@ -2512,10 +2506,8 @@ textarea.form-control-lg {
 .form-check-input:disabled {
   pointer-events: none;
   filter: none;
-  opacity: 0.5;
 }
 .form-check-input[disabled] ~ .form-check-label, .form-check-input:disabled ~ .form-check-label {
-  opacity: 0.5;
 }
 
 .form-switch {
@@ -2554,7 +2546,6 @@ textarea.form-control-lg {
 .btn-check[disabled] + .btn, .btn-check:disabled + .btn {
   pointer-events: none;
   filter: none;
-  opacity: 0.65;
 }
 
 .form-range {
@@ -11123,7 +11114,7 @@ header.masthead {
   padding-top: calc(8rem + 57px);
   padding-bottom: 8rem;
   background: no-repeat center center;
-  background-color: #6c757d;
+  
   background-size: cover;
   background-attachment: scroll;
 }
@@ -11134,8 +11125,6 @@ header.masthead:before {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #212529;
-  opacity: 0.5;
 }
 header.masthead .page-heading,
 header.masthead .post-heading,
